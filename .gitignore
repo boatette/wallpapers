@@ -1,12 +1,10 @@
-# Wallpapers are distributed via Releases, not tracked in git.
 Dark/
 Dynamic/
 Light/
 
-# Build output of optimise-wallpapers.sh
-_optimised/
+.optimised/
+.dist/
 
-# Release artifacts
 *.tar.zst
 *.tar.gz
 *.zip

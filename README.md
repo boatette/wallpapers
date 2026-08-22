@@ -1,5 +1,19 @@
 # Wallpapers
 
+Wallpapers are distributed through [Releases](../../releases)
+
+```
+./walls pull                  # fetch and extract the latest release
+./walls optimise              # recompress the tree to WebP in .optimised/
+./walls pack                  # tar each theme into .dist/
+./walls push                  # upload the tarballs to a release
+./walls prune                 # list or delete undersized wallpapers
+```
+
+`./walls <command> --help` for each command's options. `WALLPAPER_DIR` and `WALLPAPER_REPO` override the tree and the release repo.
+
+Requires `gh`, `ffmpeg`, `imagemagick`, `curl`, `tar` and `zstd` on `PATH`. Optionally requires `cwebp` from `libwebp`, falling back to ffmpeg meaning WebP output loses its ICC profile.
+
 ## Highlights
 
 <img width="1920" height="1080" alt="bluehour" src="https://github.com/user-attachments/assets/0a8eaa28-dddb-456c-bff6-c177f924a217" />
